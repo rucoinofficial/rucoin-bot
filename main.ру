@@ -30,7 +30,7 @@ TG_URL   = os.getenv("TG_URL",    "https://t.me/RuCoin_RUS")
 if not TOKEN:
     sys.exit("❌  BOT_TOKEN не задан. Создайте файл .env (см. .env.example)")
 
-BUY_URL = f"https://quickswap.exchange/#/swap?currency0=ETH&currency1={CONTRACT}&swapIndex=0"
+BUY_URL = f"https://dapp.quickswap.exchange/#/swap?swapIndex=0&currency0=POL&currency1={CONTRACT}"
 GECKO_URL  = (
     f"https://api.geckoterminal.com/api/v2/networks/{NETWORK}/tokens/{CONTRACT}"
 )
